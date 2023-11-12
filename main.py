@@ -33,14 +33,13 @@ def generate_music_tensors(description,duration:int):
 #To load the generated_music_tensors into a music we use the following function.
 #This Renders an audio player for the given audio samples and saves them to a local 
 #directory.
-#
-"""
-Arguements:
-    samples (torch.Tensor): a Tensor of decoded audio samples
-        with shapes [B, C, T] or [C, T]
-    sample_rate (int): sample rate audio should be displayed with.
-    save_path (str): path to the directory where audio should be saved.
-"""
+  
+#Arguements:
+    #samples (torch.Tensor): a Tensor of decoded audio samples
+        #with shapes [B, C, T] or [C, T]
+    #sample_rate (int): sample rate audio should be displayed with.
+    #save_path (str): path to the directory where audio should be saved.
+
 def load_music(samples: torch.Tensor):
   print("Samples (inside function): ", samples)
   sample_rate = 32000
